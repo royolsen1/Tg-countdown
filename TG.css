@@ -2,6 +2,9 @@
     width: auto;
     height: 700px;
     background-image: url("https://ibb.co/exW8Tb");
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #header {
