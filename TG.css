@@ -23,13 +23,14 @@
     margin-left: 40%;
     font-family: 'Comic Sans MS';
     /*border-width: 7px;*/
+    text-shadow: 5px 5px black;
     
 }
 
 #counter {
-    font-size: 90px;
+    font-size: 150px;
     height: 125px;
-    width: 900px;
+    width: 1200px;
     /*background-color: black;*/
     margin-left: 25%;
     margin-right: 20%;
@@ -41,6 +42,7 @@
     border-color: #595959;
     border-width: 10px;
     border-style: solid;*/
+    text-shadow: 5px 5px black;
 }
 
 #tgvid {
