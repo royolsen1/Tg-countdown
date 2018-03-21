@@ -3,13 +3,42 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>The gathering2018</title>
+    <title></title>
     <link rel="stylesheet" href="TG.css">
+    <style>
+        /* Style the video: 100% width and height to cover the entire window */
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        /* Add some content at the bottom of the video/page */
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+
+      
+    </style>
 </head>
-<body background="The Gathering 2017 Time Lapse.mp4">
-    <div id="container">
+<body>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="The Gathering 2017 Time Lapse.mp4" type="video/mp4">
+    </video>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
         <div id="header">
-            <h1> du er i vikingskipet om:</h1>
+            <h1> TG starter om;</h1>
 
         </div>
         <div id="counter">
@@ -18,11 +47,12 @@
         <div id="ticket">
 
         </div>
+
     </div>
     <script>
 
         // Set the date we're counting down to
-        var countDownDate = new Date("mar 26, 2018 15:00:00").getTime();
+        var countDownDate = new Date("mar 28, 2018 09:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function () {
@@ -52,5 +82,4 @@
     </script>
 
 </body>
-
 </html>
