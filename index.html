@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>TG2023</title>
+    <title>TG2024</title>
     <link rel="stylesheet" href="TG.css">
     <style>
         /* Style the video: 100% width and height to cover the entire window */
-        #myVideo {
+        /*/#myVideo {
             position: fixed;
             right: 0;
             bottom: 0;
@@ -30,8 +30,16 @@
     </style>
 </head>
 <body>
-    <!-- The video -->
-   <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://southcam.gathering.org/output.jpg?a=0.6705200716458102" width="100%" height="100%">
+ 
+
+    <iframe id="ytplayer" type="text/html" width="2560" height="1440"
+            src="https://www.youtube.com/embed/Y1IdsIZdqgs?autoplay=1&loop=1&mute=1"
+            frameborder="0" allowfullscreen>
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+
 
     <!-- Optional: some overlay text to describe the video -->
     <div class="content">
@@ -45,41 +53,41 @@
         <div id="ticket">
 
         </div>
-       
+
 
     </div>
     <script>
 
         // Set the date we're counting down to
-        var countDownDate = new Date("apr 5 , 2023 09:00:00").getTime();
+        var countDownDate = new Date("mar 27, 2024 09:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function () {
 
-            // Get todays date and time
-            var now = new Date().getTime();
+        // Get todays date and time
+        var now = new Date().getTime();
 
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Display the result in the element with id="demo"
-            document.getElementById("counter").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
+        // Display the result in the element with id="demo"
+        document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
 
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("counter").innerHTML = "TG har startet!";
-            }
+        // If the count down is finished, write some text
+        if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "TG har startet!";
+        }
         }, 1000);
 
-      
+
     </script>
 
 </body>
