@@ -1,11 +1,10 @@
 #container {
     width: auto;
     height: 700px;
-    /*background-image: url("https://ibb.co/exW8Tb");*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
 }
 
 #header {
@@ -35,7 +34,7 @@
     /*background-color: black;*/
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 5%;
+    /*margin-top: 5%;*/
     font-family: 'Oswald';
     text-align: center;
     position: absolute
@@ -54,6 +53,5 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    margin-bottom: 5px;
 }
 
